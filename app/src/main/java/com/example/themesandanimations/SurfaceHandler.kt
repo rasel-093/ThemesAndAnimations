@@ -1,7 +1,10 @@
 package com.example.themesandanimations
 
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.Surface
@@ -16,18 +19,36 @@ import com.example.themesandanimations.ui.theme.LittleLemonColor
 
 @Composable
 fun SurfaceHandler() {
-    Surface(
-        color = LittleLemonColor.yellow,
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Text(
-            text = "Lemon",
-            fontSize = 40.sp,
+    Column() {
+        Surface(
+            color = LittleLemonColor.yellow,
             modifier = Modifier
-                .padding(30.dp)
-                .wrapContentSize(align = Alignment.TopStart)
-                .border(2.dp, LittleLemonColor.charcoal)
-        )
+                .height(120.dp)
+                .fillMaxWidth()
+        ) {
+            Text(
+                text = "Little",
+                fontSize = 30.sp,
+                modifier = Modifier
+                    .wrapContentSize(align = Alignment.BottomCenter)
+                    .border(2.dp, LittleLemonColor.charcoal)
+            )
+        }
+        Surface(
+            color = LittleLemonColor.pink,
+            modifier = Modifier
+                .height(100.dp)
+                .fillMaxWidth()
+        ) {
+            Text(
+                text = "Lemon",
+                fontSize = 30.sp,
+                modifier = Modifier
+                    .padding(30.dp)
+                    .wrapContentSize(align = Alignment.TopEnd)
+                    .border(2.dp, LittleLemonColor.charcoal)
+            )
+        }
     }
 }
 

@@ -31,5 +31,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AppScreen() {
     //LightDarkThemeHandler()
+    SurfaceHandler()
 
 }
