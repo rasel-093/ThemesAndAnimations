@@ -32,5 +32,6 @@ class MainActivity : ComponentActivity() {
 fun AppScreen() {
     //LightDarkThemeHandler()
     //SurfaceHandler()
-    FontTypeHandler()
+    //FontTypeHandler()
+    Animations()
 }
