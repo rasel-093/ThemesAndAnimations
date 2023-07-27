@@ -33,5 +33,6 @@ fun AppScreen() {
     //LightDarkThemeHandler()
     //SurfaceHandler()
     //FontTypeHandler()
-    Animations()
+    //TextAnimation1()
+    TextAnimation2()
 }
